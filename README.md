@@ -1,4 +1,4 @@
-# demo
+
 # AlphaCore: Data Depth Based Core Decomposition
 
 AlphaCore is a novel core decomposition algorithm that leverages data depth (specifically, Mahalanobis depth) to identify and rank the most central nodes in complex networks. Unlike traditional methods (e.g., k-core) that only consider the number of connections, AlphaCore integrates multiple node features, offering a more robust analysis of network structure.
@@ -46,27 +46,5 @@ For sensitivity analysis, a smaller graph (1,000 nodes, 6 features, edge probabi
 ![Sensitivity Analysis Average](sensitivity_analysis_avg.png)  
 *Figure 2: Average top node alpha versus stepSize, comparing exponential decay and linear decay.*
 
-### Figure 3: Sensitivity Analysis (Detailed View)
-![Sensitivity Analysis Detailed](sensitivity_analysis.png)  
-*Figure 3: Detailed sensitivity analysis showing individual run variability of top node alpha values for different parameter settings.*
 
-## Contributions and Future Work
-
-We encourage the community to contribute to this method. If you work with NetworkX or igraph and have ideas for enhancements or further optimizations, please reach out or submit a pull request. Your contributions can help refine AlphaCore for a wide range of network applications.
-
-## How to Run
-
-- **Scalability Experiment:**  
-  Run the provided scalability experiment script (`scalability_experiment.py`) to measure runtime across various graph configurations. Results are saved in `scalability_results.csv` along with the plot.
-
-- **Sensitivity Experiment:**  
-  Run the sensitivity experiment script (`sensitivity_analysis_avg.py`) to see how parameter variations affect the node ranking. The results and plots are saved as `sensitivity_analysis_avg.png` and `sensitivity_analysis.png`.
-
-## License
-
-This work is licensed under the Creative Commons Attribution International 4.0 License.
-
----
-
-Please contact the respective communities (NetworkX and igraph) if you'd like to contribute or have suggestions for improvements.
 
